@@ -18,8 +18,23 @@ export class ContactEditPage {
     private formBuilder: FormBuilder, private provider: ContactProvider,
     private toast: ToastController) {
 
+    // maneira 1
     this.contact = this.navParams.data.contact || { };
     this.createForm();
+
+    // // maneira 2
+    // if (this.navParams.data.key) {
+    //   const subscribe = this.provider.get(this.navParams.data.key).subscribe((c: any) => {
+    //     subscribe.unsubscribe();
+
+    //     this.contact = c;
+    //     this.createForm();
+    //   })
+    // } else {
+    //   this.contact = { };
+    //   this.createForm();
+    // }
+
     this.setupPageTitle();
   }
 
