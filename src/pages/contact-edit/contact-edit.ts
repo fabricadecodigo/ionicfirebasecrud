@@ -23,6 +23,9 @@ export class ContactEditPage {
     this.createForm();
 
     // // maneira 2
+    // this.contact = { };
+    // this.createForm();
+
     // if (this.navParams.data.key) {
     //   const subscribe = this.provider.get(this.navParams.data.key).subscribe((c: any) => {
     //     subscribe.unsubscribe();
@@ -30,9 +33,6 @@ export class ContactEditPage {
     //     this.contact = c;
     //     this.createForm();
     //   })
-    // } else {
-    //   this.contact = { };
-    //   this.createForm();
     // }
 
     this.setupPageTitle();
