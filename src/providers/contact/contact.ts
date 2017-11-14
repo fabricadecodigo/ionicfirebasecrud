@@ -41,5 +41,4 @@ export class ContactProvider {
   remove(key: string) {
     return this.db.list(this.PATH).remove(key);
   }
-
 }
